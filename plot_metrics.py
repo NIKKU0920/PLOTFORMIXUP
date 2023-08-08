@@ -298,10 +298,10 @@ plt.figure()
 #############################
 
 #ACC_TRAIN
-Accuracy_train1 = np.load("/home/nick/CL14/ImportanceSampling-ex14/metrics_unif-SGD_cifar10_mixup_b02s2/accuracy_per_epoch_train.npy")
-Accuracy_train2 = np.load("/home/nick/CL15/ImportanceSampling-ex15/metrics_unif-SGD_cifar10_mixup_b02s2/accuracy_per_epoch_train.npy")
-Accuracy_train3 = np.load("/home/nick/CL16/ImportanceSampling-ex16/metrics_unif-SGD_cifar10_mixup_b02s2/accuracy_per_epoch_train.npy")
-Accuracy_train4 = np.load("/home/nick/CL17/ImportanceSampling-ex17/metrics_unif-SGD_cifar10_mixup_b02s2/accuracy_per_epoch_train.npy")
+Accuracy_train1 = np.load("/home/nick/CL14/ImportanceSampling-ex14/metrics_unif-SGD_cifar100_mixup_b02s2/accuracy_per_epoch_train.npy")
+Accuracy_train2 = np.load("/home/nick/CL15/ImportanceSampling-ex15/metrics_unif-SGD_cifar100_mixup_b02s2/accuracy_per_epoch_train.npy")
+Accuracy_train3 = np.load("/home/nick/CL16/ImportanceSampling-ex16/metrics_unif-SGD_cifar100_mixup_b02s2/accuracy_per_epoch_train.npy")
+Accuracy_train4 = np.load("/home/nick/CL17/ImportanceSampling-ex17/metrics_unif-SGD_cifar100_mixup_b02s2/accuracy_per_epoch_train.npy")
 # Plot each line with a different color
 plt.plot(Accuracy_train1, color='blue', label='Case 1')
 plt.plot(Accuracy_train2, color='red', label='Case 2')
@@ -309,13 +309,13 @@ plt.plot(Accuracy_train3, color='green', label='Case 3')
 plt.plot(Accuracy_train4, color='yellow', label='Case 4')
 plt.xlabel('Epoch')
 plt.ylabel('Train accuracy')
-plt.title('Train accuracy per Epoch under CIFAR-10 & budget=0.2')
+plt.title('Train accuracy per Epoch under CIFAR-100 & budget=0.2')
 # Show the legend with the labels
 plt.legend()
 # Optionally display the plot
 plt.show()
 # Save the plot to a file (e.g., PNG)
-plt.savefig("/home/nick/PLOTFORMIXUP/resultsforacctrain_c10b2.png")
+plt.savefig("/home/nick/PLOTFORMIXUP/resultsforacctrain_c100b2.png")
 
 # Reset the figure to create a new independent graph for test accuracy
 plt.figure()
